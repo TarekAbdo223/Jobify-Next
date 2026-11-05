@@ -1,5 +1,5 @@
-import Navbar from "@/components/Navbar";
-import Sidebar from "@/components/Sidebar";
+import Navbar from "@/components/ui/navbar";
+import Sidebar from "@/components/ui/sidebar";
 
 import { PropsWithChildren } from "react";
 
