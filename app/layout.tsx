@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ClerkProvider } from "@clerk/nextjs";
+import Providers from "./providers";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -23,7 +24,9 @@ export default function RootLayout({
         suppressHydrationWarning
         className={cn("font-sans", inter.variable)}
       >
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          <Providers>{children}</Providers>
+        </body>
       </html>
     </ClerkProvider>
   );
